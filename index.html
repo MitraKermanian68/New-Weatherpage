@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Weather App</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="weather-container">
+      <h1>Weather App</h1>
+      <form action="">
+        <input type="text" placeholder="Search for a city" />
+        <button type="submit">submit</button>
+      </form>
+      <span class="msg"></span>
+
+      <div class="weather-card">
+        <h2 class="city_name">
+          <span id="wa_name"></span>
+          <sup id="wa_country"></sup>
+        </h2>
+        <div class="weather-card-bottom">
+          <div class="city_temp">
+            <span id="wa_city_temp"></span>
+            <sup>&deg;C</sup>
+          </div>
+          <figure>
+            <img class="city_icon" id="wa_temp_icon" />
+            <figcaption id="wa_temp_caption"></figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

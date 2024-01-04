@@ -1,0 +1,121 @@
+*::after, *::before{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    background: linear-gradient(180deg, #1b6fc8, #000);
+    height: 100vh;
+}
+.weather-container{
+    width: 500px;
+    margin: 0 auto;
+}
+
+h1{
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 10px;
+    margin: 50px 0 50px;
+    position: relative;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+
+
+.weather-container form{
+    display: flex;
+    flex: 1;
+    background: #ffffff36;
+    border-radius: 10px;
+    height: 50px;
+    padding-left: 15px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.weather-container input{
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: #fff;
+    width: 100%;
+
+}
+.weather-container input::placeholder{
+    color: #ffffff9b;
+}
+
+.weather-container button{
+    background-color: #ff691e;
+    color: #fff;
+    font-size: 16px;
+    padding: 5px 40px;
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 50px;
+    box-shadow: -4px -4px 10px rgba(0, 0, 0, 0.2), 4px 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+.weather-card{
+    background: transparent;
+    color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: -4px -4px 10px rgba(0, 0, 0, 0.2), 4px 4px 10px rgba(255, 255, 255, 0.103);
+    margin-top: 30px;
+    display: none;
+}
+
+.city_name sup{
+    padding: 5px 10px;
+    border-radius: 30px;
+    color: #fff;
+    background-color: #ff691e;
+}
+
+.weather-card-bottom{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.weather-card-bottom figure{
+    margin: 10px 0;
+    text-align: center;
+}
+.weather-card-bottom figcaption{
+    font-weight: 700;
+}
+
+.city_temp{
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-right: 0;
+}
+
+.city_temp sup{
+    font-size: 20px;
+}
+
+.msg {
+    color: #ff2d1e;
+    font-size: 12px;
+}
+
+
